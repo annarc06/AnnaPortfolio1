@@ -2,7 +2,11 @@
 
 /* COLOR PALETTE 
 
-deep black = #47581D
+midnight blue = #2A0081
+sky blue = #B7E7FC
+bubblegum = #FFD3F0
+deep pink = #BA1650
+cream white = #f0efe4
 
 */
 
@@ -10,6 +14,140 @@ deep black = #47581D
 /* GLOBAL STYLES (mobile first) */
 
 body {
-    color: cornflowerblue;
+    display: grid;
+    grid-template-rows: auto;
+    background-color: #f0efe4;
+    margin: 0;
+    padding: 0;
+    font-size: .85rem;
+    font-family: "Times New Roman", serif;
+    border: 4px solid #2A0081;
 }
 
+section {
+    padding: 40px 0 20px;
+    margin: 0 10px;
+    line-height: 1.5rem;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #f0efe4;
+  padding: 1rem 1rem 5rem 1rem;
+  border-bottom: 5px solid #2A0081;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: #f0efe4;
+  color: #2a5e79;
+  padding: .5rem 1.5rem .5rem 1.5rem;
+  margin: 0 15px 0 15px;
+  font-size: .95rem;
+  border: 1px solid #2a5e79;
+}
+
+nav a:hover {
+    color: #BA1650;
+    border: 1px solid #BA1650;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.card-row section {
+  flex: 1 1 200px;
+  background-color: #B7E7FC;
+  padding: 15px;
+  border-radius: 5px;
+  
+}
+
+header {
+    text-align: center;
+    line-height: .25;
+    margin: 10px 0 10px 0;
+    font-size: 1rem;
+}
+
+header p {
+    font-size: .95rem;
+}
+
+#tagline {
+    background-color:  #FFD3F0;
+    margin: 0px 20px 40px;
+    padding: 75px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-top: 3px solid #BA1650;    
+    border-bottom: 3px solid #2A0081;
+}
+
+.paragraphDiv p, .paragraphDiv h2 {
+    margin: 20px 20px 20px 20px; 
+}
+
+
+footer {
+    background-color:  #FFD3F0;
+    margin: 20px 20px 0 20px;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #BA1650;   
+}
+
+
+
+.card-row-about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.card-row-about section {
+  flex: 1 1 200px;
+  background-color: #B7E7FC;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+span, #phonenumber {
+   font-weight: 600;   
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* FOR TABLETS */
+
+@media screen and (min-width: 600px) {
+    body {
+        grid-template-rows:  auto;
+        font-size: .90rem;
+    }
+}
+
+
+/* FOR DESKTOP */
+
+@media screen and (min-width: 800px) {
+    body {
+        grid-template-rows: auto;
+        font-size:.95rem;
+    }
+
+    .paragraphDiv p {
+        column-count: 2;
+        column-gap: 2rem;
+    }
+
+}
